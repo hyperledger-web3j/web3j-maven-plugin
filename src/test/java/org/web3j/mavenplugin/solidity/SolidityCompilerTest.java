@@ -8,6 +8,7 @@ import org.junit.Test;
 import java.util.Collections;
 import java.util.Set;
 
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertThat;
 
@@ -48,7 +49,7 @@ public class SolidityCompilerTest {
             solidityCompiler.compileSrc("src/test/resources/", source, new String[0], SolidityCompiler.Options.ABI, SolidityCompiler.Options.BIN);
             fail("Should throw a version mismatch exception.");
         } catch (Exception v) {
-            assertTrue(v.getMessage().contains("No compatible solc release could be found for the file"));
+            assertThat(v.getMessage(), containsString("No compatible solc release could be found for the file"));
         }
     }
 
@@ -60,7 +61,7 @@ public class SolidityCompilerTest {
             solidityCompiler.compileSrc("src/test/resources/", source, new String[0], SolidityCompiler.Options.ABI, SolidityCompiler.Options.BIN);
             fail("Should throw a version mismatch exception.");
         } catch (Exception v) {
-            assertTrue(v.getMessage().contains("No compatible solc release could be found for the file"));
+            assertThat(v.getMessage(), containsString("No compatible solc release could be found for the file"));
         }
     }
 
