@@ -19,13 +19,13 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
+import static org.junit.internal.matchers.StringContains.containsString;
 
 public class IssueITest {
 
@@ -164,7 +164,7 @@ public class IssueITest {
         assertThat("Interface and java classes are generated", files.size(), is(1));
         File file = files.get(0);
         assertThat(file.getName(), is("Greeter.java"));
-        String content = FileUtils.readFileToString(file);
+        String content = FileUtils.readFileToString(file);;
         assertThat(content, containsString("greet()"));
         assertThat(content, containsString("kill()"));
     }
