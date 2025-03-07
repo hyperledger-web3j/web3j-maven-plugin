@@ -15,7 +15,7 @@ the java classes into the folder `src/main/java`.
         <plugin>
             <groupId>org.web3j</groupId>
             <artifactId>web3j-maven-plugin</artifactId>
-            <version>4.12.1</version>
+            <version>4.13.0</version>
             <configuration>
                 <soliditySourceFiles/>
             </configuration>
@@ -59,7 +59,7 @@ Create a standard java maven project. Add following `<plugin>` - configuration i
 <plugin>
     <groupId>org.web3j</groupId>
     <artifactId>web3j-maven-plugin</artifactId>
-    <version>4.11.1</version>
+    <version>4.13.0</version>
     <configuration>
         <packageName>com.zuehlke.blockchain.model</packageName>
         <sourceDestination>src/main/java/generated</sourceDestination>
@@ -107,7 +107,7 @@ Start the generating process:
 ```
 > mvn web3j:generate-sources
 
-[INFO] --- web3j-maven-plugin:0.1.2:generate-sources (default-cli) @ hotel-showcase ---
+[INFO] --- web3j-maven-plugin:4.3.0:generate-sources (default-cli) @ hotel-showcase ---
 [INFO] process 'HotelShowCaseProxy.sol'
 [INFO] 	Built Class for contract 'HotelShowCaseProxy'
 [INFO] 	Built Class for contract 'HotelShowCaseV2'
