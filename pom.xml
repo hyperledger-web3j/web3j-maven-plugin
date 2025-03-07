@@ -40,7 +40,7 @@
         <connection>scm:git:git://ssh@github.com/hyperledger-web3j/${project.artifactId}.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hyperledger-web3j/${project.artifactId}.git</developerConnection>
         <url>https://github.com/hyperledger-web3j/${project.artifactId}.git</url>
-        <tag>web3j-maven-plugin-4.12.3</tag>
+        <tag>web3j-maven-plugin-4.13.0</tag>
     </scm>
 
     <dependencies>

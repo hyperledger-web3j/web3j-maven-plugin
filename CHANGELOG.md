@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [4.13.0]()(Upcoming)
+# [4.13.1]()()
 
 ### Bug Fixes
 
@@ -11,6 +11,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 *  
+### BREAKING CHANGES
+
+*
+
+# [4.13.0](https://github.com/hyperledger-web3j/web3j-maven-plugin/releases/tag/web3j-maven-plugin-4.13.0)(2024-03-07)
+
+### Bug Fixes
+
+*
+### Features
+
+*  Update web3j core version to 4.13.0 [#134](https://github.com/hyperledger-web3j/web3j-maven-plugin/pull/134)
+
 ### BREAKING CHANGES
 
 *
